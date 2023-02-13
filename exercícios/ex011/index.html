@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos reproduzir áudio em HTML5</p>
+    <audio src="midia/phonk.mp3" controls></audio>
+
+    <!-- Podemos usar também -->
+    
+    <audio controls loop>
+        <source src="midia/phonk.wav" type="audio/wav"> <!-- O primeiro não funciona, mas o seguinte sim.-->
+        <source src="midia/phonk.mp3" type="audio/mpeg">
+        <p>Seu navegador não toca esse arquivo de áudio, <a href="midia/phonk.mp3" download="phonk.mp3">baixe-o clicando aqui</a></p>
+    </audio>
+</body>
+</html>

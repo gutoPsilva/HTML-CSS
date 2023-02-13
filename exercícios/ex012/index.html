@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos no Site</title>
+</head>
+<body>
+    <h1>Inserindo vídeos</h1>
+    <p>Veja abaixo um vídeo no meu site.</p>
+    <video src="midia/lago.mp4" poster="imagens/thumbnail.png" controls></video>
+
+    <br> <!-- Ou para melhor compatibilidade: -->
+
+    <video poster="imagens/thumbnail.png" controls autoplay loop>
+        <source src="midia/lago.mp4" type="video/mp4">
+        <source src="midia/lago.m4v" type="video/mp4">
+        <source src="midia/lago.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com os arquivos de vídeo. <a href="midia/lago.m4v" download="lago.m4v" type="video/mp4">Baixe-o aqui.</a></p>
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7_cXxEbR_pA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Agora é a vez do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/238235598?h=bd0d871425&color=ff0179&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>
