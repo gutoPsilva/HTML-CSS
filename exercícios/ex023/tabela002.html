@@ -11,9 +11,10 @@
         }
 
         table{
-            width: 500px;
+            width: 400px;
             border-collapse: collapse;
             text-align: center;
+            position: relative;
         }
 
         td, th {
@@ -21,7 +22,26 @@
             padding: 10px;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #000000;
+            color: #FFFFFF;
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        
         thead, tfoot{
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n){
             background-color: lightgray;
         }
 
@@ -35,6 +55,7 @@
     <h1>Uso de Tabelas Grandes</h1>
 
     <!-- Anatomia Para Tabelas Grandes
+        CAPTION
         TABLE
             THEAD
                 TR, TD, TH
@@ -48,10 +69,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -95,10 +117,50 @@
                 <td>Santa Catarina
                 <td class="num">7 762 154
             </tr>
+            <tr>
+                <td>São Paulo
+                <td class="num">46 024 937
+            </tr>
+            <tr>
+                <td>Minas Gerais
+                <td class="num">20 732 660
+            </tr>
+            <tr>
+                <td>Rio de Janeiro
+                <td class="num">16 615 526
+            </tr>
+            <tr>
+                <td>Bahia
+                <td class="num">14 659 023
+            </tr>
+            <tr>
+                <td>Paraná
+                <td class="num">11 835 379
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul
+                <td class="num">11 088 065
+            </tr>
+            <tr>
+                <td>Pernambuco
+                <td class="num">9 051 113
+            </tr>
+            <tr>
+                <td>Ceará
+                <td class="num">8 936 431
+            </tr>
+            <tr>
+                <td>Pará
+                <td class="num">8 442 962
+            </tr>
+            <tr>
+                <td>Santa Catarina
+                <td class="num">7 762 154
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>155 148 250</strong>
             </tr>
         </tfoot>
