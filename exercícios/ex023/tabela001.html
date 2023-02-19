@@ -13,27 +13,26 @@
 
         table{
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
-        }
-        
-        tr.linha{
-            background-color: lightgray;
         }
 
         td{
             border: 1px solid black;
             padding: 8px;
+            text-align: center; /* Alinhamento Horizontal */
+            vertical-align: middle;
         }
 
-        td.dadoA{
-            background-color: yellow;
+        .numero{
+            text-align: right;
         }
 
     </style>
 </head>
 <body>
     
-    <h1>Miha primeira tabela</h1>
+    <h1>Minha primeira tabela</h1>
 
 <!--
     TABLE
@@ -43,31 +42,24 @@
 -->
     <table>
         <tr> <!--Primeira Linha-->
-            <td>A1
+            <td>A1 <!-- Dados da tabela-->
             <td>B1
             <td>C1
         </tr>
-        <tr class="linha">
+        <tr> <!-- Segunda Linha-->
             <td>A2
             <td>B2
-            <td>C2
+            <td class="numero">200
         </tr>
-        <tr>
+        <tr> <!-- Terceira Linha-->
             <td>A3
             <td>B3
-            <td>C3
+            <td class="numero">300
         </tr>
-        <tr class="linha">
+        <tr> <!-- Quarta Linha-->
             <td>A4
-            <td class="dadoA">B4
+            <td>B4
             <td>C4
-        </tr>
-        <tr>
-            <td>A5
-            <td>B5
-        </tr>
-        <tr>
-            <td>A6
         </tr>
     </table>
 </body>
